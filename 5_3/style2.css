@@ -1,0 +1,35 @@
+div{
+    display: inline-block;
+    background-image: url(https://cdn5.colorir.com/desenhos/color/201836/carro-de-corrida-veiculos-carros-1487012.jpg)
+    background-color: red;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.title-heading {
+    color: red;
+    background-color: black;
+    font-family: monospace;
+    font-size: xxx-large;
+}
+
+.center {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.car-section{
+    padding-top: 20px;
+    text-align: left;
+
+}
+
+.car1 {
+    background-color: red;
+}
+
+.car2{
+    background-color: blue;
+}
