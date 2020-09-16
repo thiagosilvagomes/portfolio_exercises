@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: rgb(68,125,199);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[1] //0 = primeiro paragrafo
+        //window.document.write("Está escrito assim: " + p1.innerText); //innerText é o texto que está dentro do primeiro parágrafo
+        // p1.style.color = "blue";
+        // window.document.body.style.background = "black";
+        //corpo.style.background = "black"
+        document.write(p1.innerText);
+    </script>
+</body>
+</html>
