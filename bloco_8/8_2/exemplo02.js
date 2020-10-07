@@ -65,7 +65,6 @@ console.log("Formato: A cidade de ${nomeDaCidade} fica na regiao ${nomeDaRegiao}
 //     city: "Manaus"
 //     region: "Norte"
 // }
-
 const citiesInfo = cities.map((city) => {
     const stateInfo = states.find((state) => state.short === city.state);
     const regionInfo = regions.find((region) => region.short === city.region);

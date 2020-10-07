@@ -90,8 +90,12 @@ const expected_result = [
   }
 ];
 
-function nameAndAge() {
-  // escreva seu código aqui
+function nameAndAge() 
+{
+  const ageAuthor = books.map((booksItems) => `age: ${booksItems.releaseYear - booksItems.author.birthYear}, author: ${booksItems.author.name}`);
+  return ageAuthor.sort((a,b) => b.age - a.age);
 }
+console.log(nameAndAge());
+console.log(expected_result[0]);
 
-assert.deepEqual(nameAndAge(), expected_result);
+//assert.deepEqual(nameAndAge(), expected_result);

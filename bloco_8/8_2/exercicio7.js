@@ -66,7 +66,21 @@ const books = [
 const expected_result = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
-  // escreva seu código aqui
-}
+  const bookFound = books.find((book) => {
+      const authorName = book.author.name;
+      const wordArray = authorName.split(" ");
+      if (wordArray.length < 3){
+          return false;
+      }
 
-assert.deepEqual(authorWith3DotsOnName(), expected_result);
+      if (wordArray[0].endsWith(".") && wordArray[1].endsWith(".") && wordArray[2].endsWith("."))
+      {
+          return true;
+      }
+      return false;
+  })
+  console.log(authorWith3DotsOnName());
+  //regra de negocio que verifica se o book.author.name comeca com três iniciais
+  //O que são iniciais? => Palavra que ao final da palabra eu tenho um .
+
+//assert.deepStrictEqual(authorWith3DotsOnName(), expected_result);
