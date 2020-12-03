@@ -11,14 +11,14 @@ const names = [
 
 function containsA() {
   const letterA = names.reduce((acc, curr) => {
-      acc + curr.split('').reduce((accumulator, current) => {
-        if (current === 'a' || current === 'A'){
-            return accumulator + 1;
+    acc + curr.split('').reduce((acc1, curr1) => {
+        if ((curr1 === 'A') || (curr1 === 'a')){
+            return acc1 + 1;
         }
-        return accumulator;
-    },0);
-},0);
-return letterA;
+        return acc1;
+    },0)     
+  },0)
+  return letterA;
 }
 console.log(containsA());
 //assert.deepStrictEqual(containsA(), 20);
