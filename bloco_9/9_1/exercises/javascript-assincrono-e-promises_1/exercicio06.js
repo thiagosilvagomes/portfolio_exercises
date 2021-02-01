@@ -16,6 +16,7 @@ const sendMarsTemperature = (onSuccess, onError) => {
     const didOperationSucceed = Math.random() >= 0.6;
     if (didOperationSucceed) {
         onSuccess(getMarsTemperature());
+        
     }
     else {
         errorMessage = "Robot is busy";
