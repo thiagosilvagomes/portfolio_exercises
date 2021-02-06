@@ -9,5 +9,3 @@ test ('Verifica se o sd-01-week4-5-project-meme-generator existe no retorno da A
     const getR = await getRepos('https://api.github.com/orgs/tryber/repos');
     expect(getR).toContain('sd-01-week4-5-project-meme-generator');
 });
-
-
