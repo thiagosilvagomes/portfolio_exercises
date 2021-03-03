@@ -12,9 +12,6 @@ class App extends React.Component {
   }
 
   handleClick() {
-    this.setState((previousState, _props) => ({
-      clickNumber: previousState.clickNumber + 1
-    }))
     if (this.state.clickNumber % 2 === 0)
     {
       this.setState((_previousState, _props) => ({
@@ -25,6 +22,9 @@ class App extends React.Component {
         class: 'button-green' 
       }))
     }
+    this.setState((previousState, _props) => ({
+      clickNumber: previousState.clickNumber + 1
+    }))
   }
   render() {
     return (
