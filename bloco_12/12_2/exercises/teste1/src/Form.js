@@ -19,13 +19,17 @@ class Form extends React.Component {
     };
   }
 
-  handleChange({ target }) {
-    const { name } = target;
-    const value = target.type === 'checkbox'? target.checked : target.value
+  handleChange(event) {
+    //const { name } = target; 
+    // a variavel name é o nome do componente do evento
+    const value = event.target.type === 'checkbox'? event.target.checked : event.target.value
+    // a variavel value é o valor contido no campo de textarea que veio no evento onChange
     this.setState({
       [name]: value
     })
   }
+
+  // Eu peguei esse elemento textarea: Quando ele sofrer uma alteração, ele dispara o evento onChange no campo textarea. E esse evento onChange vai pegar o valor inserido pela pessoa que tá usando e colocar no campo de estado. E o valor que vai aparecer no elemento, é o valor do estado. 
 
   render() {
     return (
